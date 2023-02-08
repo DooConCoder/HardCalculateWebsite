@@ -13,7 +13,7 @@ imageRequest.onreadystatechange = function() {
             };
 
             var img = document.createElement("img");
-            img.src = data[i]
+            img.src = data[i];
             div.appendChild(img);
             document.body.appendChild(div);
         }
