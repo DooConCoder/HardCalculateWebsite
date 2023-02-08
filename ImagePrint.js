@@ -7,6 +7,11 @@ imageRequest.onreadystatechange = function() {
         for (var i = 0; i < data.length; i++) {
             var div = document.createElement("div");
             div.setAttribute("class", "image");
+
+            div.onclick = function() {
+                this.classList.toggle("image-selected")
+            };
+
             var img = document.createElement("img");
             img.src = data[i];
             div.appendChild(img);
